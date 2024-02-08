@@ -1,5 +1,50 @@
-<html>
-  <body>
-  Hello World!
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Hello, World!</title>
+  <style>
+    body {
+      background-color: #3498db;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #hello-container {
+      text-align: center;
+    }
+
+    #hello-text {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    #world-text {
+      font-size: 2em;
+      margin-top: 0.5em;
+    }
+
+    #blink {
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="hello-container">
+    <p id="hello-text">Hello, <span id="blink">World!</span></p>
+    <p id="world-text">I am Pardha Saradhi Kanumuri.</p>
+  </div>
+</body>
 </html>
